@@ -1,0 +1,26 @@
+
+{
+    "name": "rodrigodornelles/php-array-lib",
+    "description": "simple libary for functional programing paradigm with arrays",
+    "keywords": ["TDD","array"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "RodrigoDornelles",
+            "email": "rodrigo@dornelles.me",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "http://github.com/rodrigodornelles/php-array-lib/issues",
+        "source": "http://github.com/rodrigodornelles/php-array-lib"
+    },
+    "require": {
+        "php": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src"
+        }
+    }
+}
