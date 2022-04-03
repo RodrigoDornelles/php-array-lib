@@ -1,7 +1,7 @@
 <?php 
 
 assert_options(ASSERT_BAIL, true);
-require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__.'/../src/ArrayCreate.php';
 
 /** 
  * test 1
