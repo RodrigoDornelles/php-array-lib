@@ -1,4 +1,4 @@
-# php-array-lib
+# rodrigodornelles/php-array-lib
 
 [![version](https://img.shields.io/github/v/release/rodrigodornelles/php-array-lib?sort=semver&logo=packagist)](https://packagist.org/packages/rodrigodornelles/php-array-lib)
 [![license](https://img.shields.io/github/license/rodrigodornelles/php-array-lib)](https://github.com/RodrigoDornelles/php-array-lib/blob/master/LICENSE) 
