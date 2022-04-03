@@ -14,6 +14,20 @@
  * Make your code cleaner and more readable
  * Adds new methods to manipulate arrays _(Inspired by **ruby**, **js** and other langs)_
 
+
+## How to Use
+
+```PHP
+
+use ArrayCreate;                                  # if you using namespaces
+
+$myNewArray = ArrayCreate::from($myOriginalArray) # instantiate pipeline class
+  ->map(someItemFunction)                         # first function to iterate on each item
+  ->map(anotherItemFunction)                      # next function to iterate on each item
+  ->filter(anotherItemFunction2)                  # next function to filter on each item
+  ->construct();                                  # returns new array
+```
+
 ## Examples ##
 
 ### side by side comparison ###
@@ -23,3 +37,44 @@ Make an algorithm that sorts an array, removes the numbers not divisible by 3, a
 | Libary<br/>Functional | Native<br/>Functional | Structured |
 | :-: | :-: | :-: |
 | ![libary functional example](/images/libary-functional-min.png) | ![native functional example](/images/native-functional-min.png) | ![structured example](/images/structured-min.png)
+
+## Installation ##
+
+### With Composer ###
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+Either run
+
+```SHELL
+$ composer require dynamikaweb/php-brazil-info "~1.0.0"
+```
+
+or add
+
+```JSON
+"rodrigodornelles/php-array-lib": "~1.0.0"
+```
+
+to the `require` section of your `composer.json` file.
+
+### Without Composer ###
+
+#### Step 1 ####
+
+Download libary in <https://github.com/RodrigoDornelles/php-array-lib/releases>
+
+#### Step 2 ####
+
+Extract the file into your libraries folder
+
+#### Step 3 ####
+
+Import the main class
+
+```PHP
+<?php 
+
+require_once __DIR__.'/path/to/my/libaries/php-array-lib/src/ArrayCreate.php';
+
+```
