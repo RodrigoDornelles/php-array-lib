@@ -1,3 +1,5 @@
 composer.lock
 composer.phar
+ocular.phar
 /vendor/
+/.phpunit.cache/

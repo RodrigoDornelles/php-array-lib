@@ -59,7 +59,7 @@ class ArrayCreate
      */
     public function first()
     {
-        $item = $this->_array[array_key_first($this->_array)];
+        $item = current(array_slice($this->_array, 0, 1));
         return is_array($item)? self::from($item): $item;
     }
 
@@ -97,7 +97,8 @@ class ArrayCreate
      */
     public function last()
     {
-        $item = $this->_array[array_key_last($this->_array)];
+        $item = end($this->_array);
+        reset($this->_array);
         return is_array($item)? self::from($item): $item;
     }
 
