@@ -1,0 +1,26 @@
+name: Fast Test Suite
+
+on: [push, pull_request]
+
+jobs:
+  phpunit:
+    name: PHP ${{ matrix.php }} / No Composer
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ['5.4', '5.5', '5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1', '8.2']
+
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+
+      - name: Install PHP ${{ matrix.php }}
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring
+          ini-values: date.timezone='UTC', session.save_path="${{ runner.temp }}"
+
+      - name: PHP Unit tests for PHP ${{ matrix.php }}
+        run: php ./tests/WithoutComposerTest.php
