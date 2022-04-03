@@ -32,4 +32,4 @@ $array = ArrayCreate::from($array)->flip()->construct();
 assert($array['first'] == 0);
 assert($array['last'] == 2);
 
-print("done.\n");
+print("OK.\n");
