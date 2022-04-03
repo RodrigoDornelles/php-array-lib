@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/github/license/rodrigodornelles/php-array-lib)](https://github.com/RodrigoDornelles/php-array-lib/blob/master/LICENSE) 
 [![quality](https://img.shields.io/codacy/grade/5ac185bc5cb44339ac8dc2ee98e8082d?logo=codacy)](https://www.codacy.com/gh/RodrigoDornelles/php-array-lib/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=RodrigoDornelles/php-array-lib&amp;utm_campaign=Badge_Grade)
 [![coverage](https://img.shields.io/codacy/coverage/5ac185bc5cb44339ac8dc2ee98e8082d?logo=codacy)](https://www.codacy.com/gh/RodrigoDornelles/php-array-lib/dashboard?utm_source=github.com&utm_medium=referral&utm_content=RodrigoDornelles/php-array-lib&utm_campaign=Badge_Coverage)
+[![building](https://img.shields.io/github/checks-status/rodrigodornelles/php-array-lib/master?logo=github)](https://github.com/rodrigodornelles/php-array-lib/actions)
+
 
 > simple libary for functional programing paradigm with arrays
 
