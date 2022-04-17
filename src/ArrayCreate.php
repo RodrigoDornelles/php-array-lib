@@ -15,6 +15,7 @@
  * @method join
  * @method last
  * @method map
+ * @method sort
  * 
  **
  */
@@ -110,6 +111,17 @@ class ArrayCreate
     public function map($func)
     {
         $this->_array = array_map($func, $this->_array);
+        return $this;
+    }
+
+    /**
+     * @param Int $sort_flags
+     * 
+     * @return ArrayCreate
+     */
+    public function sort($sort_flags = SORT_REGULAR)
+    {
+        sort($this->_array, $sort_flags);
         return $this;
     }
 }
