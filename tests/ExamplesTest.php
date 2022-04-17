@@ -2,13 +2,11 @@
 
 use PHPUnit\Framework\TestCase;
 
-/**
- * @covers ::readmeFunctionalLibary
- * @covers ::readmeFunctionalNative
- * @covers ::readmeStructured
- */
 class ExamplesTest extends TestCase
 {
+    /**
+     * @covers ::readmeFunctionalLibary
+     */
     public function testReadmeFunctionalLibary()
     {
         $expected = '6, 30, 84, 108';
@@ -20,6 +18,9 @@ class ExamplesTest extends TestCase
         $this->assertSame($expected, $content);
     }
 
+    /**
+     * @covers ::readmeFunctionalNative
+     */
     public function testFunctionalNative()
     {
         $expected = '6, 30, 84, 108';
@@ -31,6 +32,9 @@ class ExamplesTest extends TestCase
         $this->assertSame($expected, $content);
     }
 
+    /**
+     * @covers ::readmeStructured
+     */
     public function testReadmeStructured()
     {
         $expected = '6, 30, 84, 108';
