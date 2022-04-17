@@ -53,4 +53,5 @@ jobs:
         run: vendor/bin/phpunit --verbose ${{ env.PHPUNIT_COVERAGE_FLAGS }} ${{ env.PHPUNIT_EXCLUDE_GROUP }} --colors=always
         
       - name: Report Coverage to Codacy
+        if: github.event_name == 'push'
         run: bash <(curl -Ls https://coverage.codacy.com/get.sh) report --project-token ${{ secrets.CODACY_PROJECT_TOKEN }}
