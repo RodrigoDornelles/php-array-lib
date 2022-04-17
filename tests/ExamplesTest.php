@@ -6,6 +6,12 @@ class ExamplesTest extends TestCase
 {
     /**
      * @covers ::readmeFunctionalLibary
+     * @covers ArrayCreate::__construct
+     * @covers ArrayCreate::filter
+     * @covers ArrayCreate::from
+     * @covers ArrayCreate::join
+     * @covers ArrayCreate::map
+     * @covers ArrayCreate::sort
      */
     public function testReadmeFunctionalLibary()
     {
