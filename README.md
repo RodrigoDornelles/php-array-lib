@@ -38,7 +38,7 @@ Make an algorithm that sorts an array, removes the numbers not divisible by 3, a
 
 | Libary<br/>Functional | Native<br/>Functional | Structured |
 | :-: | :-: | :-: |
-| ![libary functional example](/images/libary-functional-min.png) | ![native functional example](/images/native-functional-min.png) | ![structured example](/images/structured-min.png)
+| [![libary functional example](/images/libary-functional-min.png)](./examples/readme-functional-libary.php) | [![native functional example](/images/native-functional-min.png)](./examples/readme-functional-native.php) | [![structured example](/images/structured-min.png)](./examples/readme-structured.php)
 
 ## Installation ##
 
