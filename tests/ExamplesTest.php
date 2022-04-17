@@ -3,9 +3,9 @@
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \..\examples\readme-functional-libary
- * @covers \..\examples\readme-functional-native
- * @covers \..\examples\readme-structured
+ * @covers ::readmeFunctionalLibary
+ * @covers ::readmeFunctionalNative
+ * @covers ::readmeStructured
  */
 class ExamplesTest extends TestCase
 {

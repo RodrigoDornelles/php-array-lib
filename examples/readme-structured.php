@@ -1,18 +1,23 @@
 <?php
 
-$numbers = [54, 32, 15, 3, 7, 42];
-
-sort($numbers);
-
-foreach($numbers as $key => $number)
+function readmeStructured()
 {
-	if ($number % 3) {
-		continue;
-	}
+	$numbers = [54, 32, 15, 3, 7, 42];
 
-	echo $number * 2;
+	sort($numbers);
 
-	if (array_key_last($numbers) !== $key) {
-		echo ", ";
+	foreach($numbers as $key => $number)
+	{
+		if ($number % 3) {
+			continue;
+		}
+
+		echo $number * 2;
+
+		if (array_key_last($numbers) !== $key) {
+			echo ", ";
+		}
 	}
 }
+
+readmeStructured();
